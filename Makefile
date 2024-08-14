@@ -46,7 +46,7 @@ download-new-version:
 # Stop the current version and start the new one
 upgrade-version:
 	@echo "Stopping current OpenFGA version..."
-	@docker compose down || (echo "Failed to stop OpenFGA" && exit 1)
+	@docker compose stop || (echo "Failed to stop OpenFGA" && exit 1)
 	@echo "Starting OpenFGA with new version $(TARGET_VERSION)..."
 	@docker compose up -d || (echo "Failed to start OpenFGA with new version" && exit 1)
 
