@@ -1,2 +1,4 @@
-make VERSION=v1.3.0
+```
+make VERSION=v1.2.0 TARGET_VERSION=v1.3.10
+```
 
